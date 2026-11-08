@@ -1,0 +1,8 @@
+{
+  "name": "Spice District - Authentic Pakistani Restaurant",
+  "description": "Premium Pakistani restaurant ordering system featuring Biryani, Karahi, Nihari, Haleem, and Charcoal BBQ with instant PKR cart and delivery checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

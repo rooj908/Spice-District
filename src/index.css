@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-emerald-deep: #071f13;
+    --color-emerald-card: #0d2a1c;
+    --color-emerald-light: #16402d;
+    --color-gold-primary: #d4af37;
+    --color-gold-hover: #e5c358;
+    --color-cream-bg: #fcf8ee;
+    --color-cream-muted: #e7dfca;
+  }
+
+  body {
+    background-color: #081a10;
+    color: #f7f3e8;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-heading {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #091c12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e4531;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Luxury gold gradients and glow */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f7e29b 0%, #d4af37 50%, #aa841e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.25);
+}
+
+.emerald-pattern {
+  background-color: #071d12;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  header, footer, section:not(.print-order-receipt) {
+    display: none !important;
+  }
+}
+
